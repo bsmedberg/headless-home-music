@@ -1,0 +1,177 @@
+begin
+  prog = headless-home-music
+  button = KEY_0
+  config = KEY_0
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_1
+  config = KEY_1
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_2
+  config = KEY_2
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_3
+  config = KEY_3
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_4
+  config = KEY_4
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_5
+  config = KEY_5
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_6
+  config = KEY_6
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_7
+  config = KEY_7
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_8
+  config = KEY_8
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_9
+  config = KEY_9
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_SLEEP
+  config = KEY_SLEEP
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_MUTE
+  config = KEY_MUTE
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_MENU
+  config = KEY_MENU
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_VOLUMEUP
+  repeat = 2
+  delay = 2
+  config = KEY_VOLUMEUP
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_VOLUMEDOWN
+  repeat = 2
+  delay = 2
+  config = KEY_VOLUMEDOWN
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_CHANNELUP
+  config = KEY_CHANNELUP
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_CHANNELDOWN
+  config = KEY_CHANNELDOWN
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_UP
+  config = KEY_UP
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_LEFT
+  config = KEY_LEFT
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_DOWN
+  config = KEY_DOWN
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_RIGHT
+  config = KEY_RIGHT
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_OK
+  config = KEY_OK
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_STOP
+  config = KEY_STOP
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_FASTFORWARD
+  config = KEY_FASTFORWARD
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_PAUSE
+  config = KEY_PAUSE
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_BACK
+  config = KEY_BACK
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_PLAY
+  config = KEY_PLAY
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_FORWARD
+  config = KEY_FORWARD
+end
+
+begin
+  prog = headless-home-music
+  button = KEY_POWER
+  config = KEY_POWER
+end
