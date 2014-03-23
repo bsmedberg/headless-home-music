@@ -1,7 +1,6 @@
 import alsaaudio
 import wave
 import time
-from events import AudioEvent
 
 class WAVPlayer(object):
     _FORMAT_LIST = (
@@ -20,6 +19,7 @@ class WAVPlayer(object):
         self._playing = False
         self._frame = 0
         self.autoclose = False
+        self.done = False
 
     def close(self):
         if self._playing:
@@ -46,6 +46,7 @@ class WAVPlayer(object):
         self._playing = True
         self._data = None
         self._draining = False
+        self.done = False
 
         self._d = alsaaudio.PCM(card="plug:dmix", mode=alsaaudio.PCM_NONBLOCK)
         self._d.setchannels(self._w.getnchannels())
@@ -132,7 +133,8 @@ class WAVPlayer(object):
             self._draining = False
             self._stop()
             self._frame = 0
-            yield AudioEvent("AUDIO_COMPLETE", audio=self)
+            self.done = True
+            yield None # wake the client up
 
     def __enter__(self):
         return self
@@ -155,16 +157,17 @@ if __name__ == "__main__":
 
     with WAVPlayer(fname, p) as a:
         for e in p.run():
+            if a.done:
+                print "All done!"
+                sys.exit(0)
+            if e is None:
+                continue
             if e.name == "KEY_PLAY":
                 a.play()
             elif e.name == "KEY_PAUSE":
                 a.pause()
             elif e.name == "KEY_STOP":
                 a.stop()
-            elif e.name == "AUDIO_COMPLETE":
-                if e.audio == a:
-                    print "all done, thanks!"
-                    sys.exit(0)
             elif e.name == "KEY_POWER":
                 print "bye"
                 sys.exit(0)

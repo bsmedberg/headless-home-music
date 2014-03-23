@@ -1,5 +1,4 @@
 import select
-import sched
 import time
 
 class Poller(object):

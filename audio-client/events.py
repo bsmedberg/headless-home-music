@@ -4,8 +4,5 @@ class Event(object):
         for name, val in kwargs.items():
             setattr(self, name, val)
 
-class AudioEvent(Event):
-    pass
-
 class UIEvent(Event):
     pass
